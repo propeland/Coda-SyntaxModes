@@ -1,0 +1,12 @@
+This is a collection of modes for Coda. Most are cloned exactly from the SubEthaEdit
+mode collection at codingmonkeys.de. I have made the occasional tweak where I've found
+inconsistencies.
+
+http://www.codingmonkeys.de/subethaedit/modes.html
+
+To install, clone this repo into ~/Library/Application Support/Coda
+
+Make sure the Modes folder ends up at the path ~/Library/Application Support/Coda/Modes
+
+I didn't name the repository Coda, because I thought that would be confusing, and I'm only
+tracking the Modes for now.

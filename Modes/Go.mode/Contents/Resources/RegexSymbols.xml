@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbols>
+
+    <blocks>
+        <beginregex>{</beginregex>
+        <endregex>}</endregex>
+    </blocks>
+
+    <symbol id="Funtions" image="SymbolF()" indentation="1" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)(func[\s\t]*[\w\d].*{)</regex>
+        <postprocess>
+            <find>{.*</find>
+            <replace></replace>
+			<find>func </find>
+			<replace></replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+
+    <symbol id="Methods" image="SymbolM" indentation="1" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)(func[\s\t]*\(.*{)</regex>
+        <postprocess>
+            <find>{.*</find>
+            <replace></replace>
+			<find>func </find>
+			<replace></replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+
+    <symbol id="TypeDecl" image="SymbolT" indentation="1" ignoreblocks="no">
+        <regex>(?&lt;=[\n\r]|^)(type.*)</regex>
+        <postprocess>
+			<find>type </find>
+			<replace></replace>
+            <find>{.*</find>
+            <replace></replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+
+    <!-- 
+    The <symbol> tag specifies what is being shown in the fuction popup.
+    It features the following attributes, all optional if not noted otherwise:
+        id
+            Has to be a unique string. Has to be specified.
+        image
+            Specify an image includes in the application (no extension) or
+            specify an image in this modes Resources directory (with extension)
+            SubEthaEdit comes with the following images:
+            Symbol#, SymbolC, SymbolE, SymbolF, SymbolF(), SymbolG, SymbolK,
+            SymbolL, SymbolM, SymbolP, SymbolS, SymbolT, SymbolV, SymbolWarn
+        indentation
+            0-15    The level of indentation
+        font-weight
+            normal  Normal font-weight (default)
+            bold    Bold text in popup
+        font-style
+            normal  Normal font-weight (default)
+            italic  Bold text in popup
+            
+        The example shows an symbol name "First example" with the image SymbolM
+        and an indentation of 1.
+    -->    
+</symbols>

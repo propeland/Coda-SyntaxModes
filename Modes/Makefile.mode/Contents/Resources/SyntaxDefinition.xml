@@ -75,7 +75,7 @@
                     <regex>(((?&lt;!\\)(\\\\)*)|^)"</regex>
                 </end>
             </state>
-            <state id="Command" type="block" foldable="yes">
+<!--            <state id="Command" type="block" foldable="yes">
                 <begin>
                     <regex>(?:^\t)</regex>
                 </begin>
@@ -86,6 +86,7 @@
                 <state-link state="SingleComment"/>
                 <state-link state="String"/>
             </state>
+-->
         </default>
     </states>
 </syntax>

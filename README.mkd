@@ -1,12 +1,18 @@
 This is a collection of modes for Coda. Most are cloned exactly from the SubEthaEdit
 mode collection at codingmonkeys.de. I have made the occasional tweak where I've found
-inconsistencies.
+inconsistencies or incompatibility with Coda.
 
 http://www.codingmonkeys.de/subethaedit/modes.html
 
-To install, clone this repo into ~/Library/Application Support/Coda
+To install, put the contents of the "Modes" folder into ~/Library/Application Support/Coda/Modes
 
-Make sure the Modes folder ends up at the path ~/Library/Application Support/Coda/Modes
+I use a symbolic link for this purpose, so that I can maintain the modes in a seperate location, for example:
 
-I didn't name the repository Coda, because I thought that would be confusing, and I'm only
-tracking the Modes for now.
+    ln -s ~/Projects/Coda-SyntaxModes ~/Library/Application\ Support/Coda/Modes
+
+----
+
+If a mode doesn't work with Coda, there are generally two culprits:
+
+1. In "SyntaxDefinition.xml" some state or keyword block is defined without a color.
+2. 'import' tags are introducing some undefined dependency.

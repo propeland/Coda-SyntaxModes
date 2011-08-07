@@ -117,7 +117,7 @@
 					<string> tags specify plain text to be colored. If your tag does not
 					get colored, check in <charsintokens> if you are tokenizing correctly.			   
 				-->	   
-			<keywords id="Built-in Functions" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Built-in Functions" color="#458">
 				<string>abs</string>
 				<string>alive</string>
 				<string>apply</string>
@@ -215,7 +215,7 @@
 
 			</keywords>
 
-			<keywords id="Functions" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Functions" color="#900" font-style="italic">
 				<string>acos</string>
 				<string>asin</string>
 				<string>atan</string>
@@ -241,12 +241,12 @@
 
 			</keywords>
 
-			<keywords id="Function Calls" color="#900" font-weight="bold">
+			<keywords id="Function Calls" color="#900">
 				<regex>([0-9a-zA-Z_-]+:[0-9a-zA-Z_-]+)\(</regex>
 				<regex>([0-9a-zA-Z_-]+)\(</regex>
 			</keywords>
 
-			<keywords id="Directives" color="#800080" font-weight="bold">
+			<keywords id="Directives" color="#800080">
 				<regex>(-behaviour)\(</regex>
 				<regex>(-compile)\(</regex>
 				<regex>(-define)\(</regex>
@@ -268,7 +268,7 @@
 				
 			</keywords>
 
-			<keywords id="Processes" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Processes" color="#400080">
 				<string>creation</string>
 				<string>current_function</string>
  				<string>dictionary</string>
@@ -295,7 +295,7 @@
 				<string>waiting</string>
 		   </keywords>
 		  
-			<keywords id="Ports" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Ports" color="#400080">
 				<string>command</string>
 				<string>count_in</string>
 				<string>count_out</string>
@@ -309,7 +309,7 @@
 				<string>packeting</string>
 			</keywords>
 		 
-			<keywords id="Nodes" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Nodes" color="#400080">
 				<string>atom_table</string>
 				<string>communicating</string>
 				<string>creation</string>
@@ -338,7 +338,7 @@
 				<string>wall_clock</string>
 			</keywords>
 
-			<keywords id="Reserved" color="#800080" font-weight="bold" font-style="italic">
+			<keywords id="Reserved" color="#800080">
 				<string>apply_lambda</string>
 				<string>module_info</string>
 				<string>module_lambdas</string>
@@ -348,7 +348,7 @@
 
 			</keywords>
 
-			<keywords id="Extras" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Extras" color="#400080">
 				<string>badarg</string>
 				<string>nocookie</string>
 				<string>false</string>
@@ -356,7 +356,7 @@
 				<string>true</string>
 			</keywords>
 
-			<keywords id="Signals" color="#400080" font-weight="bold" font-style="italic">
+			<keywords id="Signals" color="#400080">
 				<string>badsig</string>
 				<string>kill</string>
 				<string>killed</string>
@@ -377,7 +377,7 @@
 			(see a regex tutorial) and colors "foobar" with strings.
 		-->	   
 		
-		<state id="SingleComment" color="#998" font-style="italic">
+		<state id="SingleComment" color="#236E25">
 			<begin><regex>%</regex></begin>
 			<end><regex>[\n\r]</regex></end>
 		</state>

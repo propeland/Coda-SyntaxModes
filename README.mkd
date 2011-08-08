@@ -2,7 +2,7 @@ This is a collection of modes for Coda. Most are cloned exactly from the SubEtha
 mode collection at codingmonkeys.de. I have made the occasional tweak where I've found
 inconsistencies or incompatibility with Coda.
 
-http://www.codingmonkeys.de/subethaedit/modes.html
+[www.codingmonkeys.de Modes](http://www.codingmonkeys.de/subethaedit/modes.html)
 
 To install, put the contents of the "Modes" folder into ~/Library/Application Support/Coda/Modes
 
@@ -21,7 +21,11 @@ If a mode doesn't work with Coda, there are generally two culprits:
 
 Some basic guidelines that I'm trying to follow with these modes:
 
-General Coloring:
+Testing against valid code examples. All the modes contain an example file test.(type) file that
+illustrates how each particular coloring looks in practice. I welcome changes to these files to
+show test cases that fail.
+
+# General Coloring:
 
 - Keywords:             #881350             id="Keywords"
 - Classes:              #cc4c00  SymbolC    id="Classes"

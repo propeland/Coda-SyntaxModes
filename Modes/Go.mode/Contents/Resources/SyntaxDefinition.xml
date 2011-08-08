@@ -14,7 +14,7 @@
 		This tag is required and must match with the name in the plist after the SEEMode..
 		-->		 
 
-		<name>Go Syntax</name>
+		<name>go</name>
 
 		<!-- 
 		The <charsintokens> and the <charsdelimitingtokens> instruct the syntax highlighter
@@ -143,7 +143,7 @@
 
 			</keywords>
 
-			<keywords id="Built in types" color="#000080" font-style="italic">
+			<keywords id="Built in types" color="#000080">
 				<string>uint8</string>
 				<string>uint16</string>
 				<string>uint32</string>
@@ -163,7 +163,7 @@
 				<string>bool</string>
 			</keywords>
 
-			<keywords id="builtin functions" color="#881350" font-weight="normal">
+			<keywords id="builtin functions" color="#881350">
 				<string>len</string>
 				<string>cap</string>
 				<string>new</string>
@@ -182,7 +182,7 @@
 				<string>Unreflect</string>
 			</keywords>
 			
-						<keywords id="standard packages" color="#400080" font-weight="normal" font-style="normal" casesensitive="yes" useforautocomplete="yes">
+			<keywords id="standard packages" color="#400080" useforautocomplete="yes">
 				<string>adler32</string>
 				<string>aes</string>
 				<string>ascii85</string>
@@ -283,20 +283,26 @@
 				The strings state handles escaped quotes with a lookbehind regular expression 
 				(see a regex tutorial) and colors "foobar" with strings.
 			-->
+
+<!--
       <keywords id="Numbers" color="#00f" useforautocomplete="no">
         <regex>(?&lt;![\w\d_])((?:[+-]?(?:(?:[0-9]+\.[0-9]*)|(?:\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0[0-7]*|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d_])</regex>
       </keywords>
+-->
       
+<!--
       <keywords id="FunctionRegex" color="#003369" useforautocomplete="no">
         <regex>([A-Za-z0-9_]+ *)\(</regex>
       </keywords>
+-->
 
-			<state id="Comment" color="#236E25" font-style="italic">
+<!--
+			<state id="Comment" color="#236E25">
 				<begin><regex>/\*</regex></begin>
 				<end><regex>\*/</regex></end>
 			</state>
 			
-			<state id="SingleComment" color="#236E25" font-style="italic">
+			<state id="SingleComment" color="#236E25">
 				<begin><regex>//</regex></begin>
 				<end><regex>[\n\r]</regex></end>
 			</state>
@@ -313,6 +319,7 @@
 				<begin><regex>`</regex></begin>
 				<end><regex>`</regex></end>
 			</state>
+-->
 			
 		</default>
 		

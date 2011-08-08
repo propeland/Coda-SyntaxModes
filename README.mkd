@@ -4,18 +4,23 @@ inconsistencies or incompatibility with Coda.
 
 [www.codingmonkeys.de Modes](http://www.codingmonkeys.de/subethaedit/modes.html)
 
-To install, put the contents of the "Modes" folder into ~/Library/Application Support/Coda/Modes
+To install, put the contents of the "Modes" folder into
+~/Library/Application Support/Coda/Modes
 
-I use a symbolic link for this purpose, so that I can maintain the modes in a seperate location, for example:
+I use a symbolic link for this purpose, so that I can maintain the modes in a
+seperate location, for example:
 
     ln -s ~/Projects/Coda-SyntaxModes ~/Library/Application\ Support/Coda/Modes
 
-----
+## Info For Mode Writers
 
 If a mode doesn't work with Coda, there are generally two culprits:
 
 1. In "SyntaxDefinition.xml" some state or keyword block is defined without a color.
 2. 'import' tags are introducing some undefined dependency.
+
+If your symbols are disappearing from the Code Navigator, make sure the mode name is the same
+in all places, see: https://groups.google.com/forum/#!topic/coda-users/g9W8IlHFBOQ
 
 ----
 
@@ -25,7 +30,7 @@ Testing against valid code examples. All the modes contain an example file test.
 illustrates how each particular coloring looks in practice. I welcome changes to these files to
 show test cases that fail.
 
-# General Coloring:
+## General Coloring:
 
 - Keywords:             #881350             id="Keywords"
 - Classes:              #cc4c00  SymbolC    id="Classes"
@@ -55,4 +60,3 @@ Other:
 - Operators:            #ff0000             id="Operators" (not generally colored)
 - Preprocessor:         #ff6500  Symbol#    id="Preprocessor"
 - AltString:            #eb7300             id="Alternate String" (only if semantically different)
-

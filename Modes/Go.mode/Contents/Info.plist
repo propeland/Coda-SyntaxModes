@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>SEEMode.Go</string> <!-- Change bundle identifier. Must start with "SEEMode." -->
+	<string>SEEMode.go</string> <!-- Change bundle identifier. Must start with "SEEMode." -->
 	<key>CFBundleName</key>
-	<string>Go</string> <!-- Change bundle name. -->
+	<string>GO</string> <!-- Change bundle name. -->
     <key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

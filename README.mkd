@@ -30,33 +30,35 @@ Testing against valid code examples. All the modes contain an example file test.
 illustrates how each particular coloring looks in practice. I welcome changes to these files to
 show test cases that fail.
 
-## General Coloring:
+Following Coda coloring conventions. Unfortunately, this seems to vary quite a bit among modes, but
+here's what I've been referencing:
 
-- Keywords:             #881350             id="Keywords"
-- Classes:              #cc4c00  SymbolC    id="Classes"
-- Functions:            #003369  SymbolF()  id="Functions"
-- Methods:              #6619bc  SymbolM    id="Methods"
-- Constants:            #994c00  Symbol     id="Constants"
-- Properties:           #0076bc             id="Properties"
-- Numbers:              #0000ff             id="Numbers"
-- Characters:           #0000ff             id="Characters" (include hex/oct)
-- Strings:              #760f15             id="Strings"
-- StringVar:            #c4620a             id="Variable / replacement inside String"
-- Regexp:               #661aa9             
-- Comments:             #236e25             id="Comment | Comment Block"
-
-XML / HTML:
-
-- Tags:                 #881280
-- Special Tags:         #236e25
-- CDATA / PHP Tags:     #ff0000
-- Attributes:           #994500
-- Strings in Tags:      #1a1aa6
-
-Other:  
-
-- Marks:                         SymbolMark
-- Warnings(bold)                 SymbolWarn
-- Operators:            #ff0000             id="Operators" (not generally colored)
-- Preprocessor:         #ff6500  Symbol#    id="Preprocessor"
-- AltString:            #eb7300             id="Alternate String" (only if semantically different)
+		- KIND                   COLOR    SYMBOL        ID
+		- Keywords:             #881350             id="Keywords"
+		- Classes:              #cc4c00  SymbolC    id="Classes"
+		- Functions:            #003369  SymbolF()  id="Functions"
+		- Methods:              #6619bc  SymbolM    id="Methods"
+		- Constants:            #994c00  Symbol     id="Constants"
+		- Properties:           #0076bc             id="Properties"
+		- Numbers:              #0000ff             id="Numbers"
+		- Characters:           #0000ff             id="Characters" (include hex/oct)
+		- Strings:              #760f15             id="Strings"
+		- StringVar:            #c4620a             id="Variable / replacement inside String"
+		- Regexp:               #661aa9             
+		- Comments:             #236e25             id="Comment | Comment Block"
+		
+		XML / HTML:
+		
+		- Tags:                 #881280
+		- Special Tags:         #236e25
+		- CDATA / PHP Tags:     #ff0000
+		- Attributes:           #994500
+		- Strings in Tags:      #1a1aa6
+		
+		Other:  
+		
+		- Marks:                         SymbolMark
+		- Warnings(bold)                 SymbolWarn
+		- Operators:            #ff0000             id="Operators" (not generally colored)
+		- Preprocessor:         #ff6500  Symbol#    id="Preprocessor"
+		- AltString:            #eb7300             id="Alternate String" (only if semantically different)

@@ -49,5 +49,9 @@
 		</postprocess>
 	</symbol>
 	
+	<symbol id="labels" image="SymbolWarn">
+		<regex>^[\w]*:</regex>
+	</symbol>
+
 	
 </symbols>

@@ -284,19 +284,14 @@
 				(see a regex tutorial) and colors "foobar" with strings.
 			-->
 
-<!--
-      <keywords id="Numbers" color="#00f" useforautocomplete="no">
-        <regex>(?&lt;![\w\d_])((?:[+-]?(?:(?:[0-9]+\.[0-9]*)|(?:\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0[0-7]*|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d_])</regex>
-      </keywords>
--->
-      
-<!--
-      <keywords id="FunctionRegex" color="#003369" useforautocomplete="no">
-        <regex>([A-Za-z0-9_]+ *)\(</regex>
-      </keywords>
--->
+			<keywords id="Numbers" color="#00f" useforautocomplete="no">
+				<regex>(?&lt;![\w\d_])((?:[+-]?(?:(?:[0-9]+\.[0-9]*)|(?:\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0[0-7]*|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d_])</regex>
+			</keywords>
+			
+			<keywords id="FunctionRegex" color="#003369" useforautocomplete="no">
+				<regex>([A-Za-z0-9_]+ *)\(</regex>
+			</keywords>
 
-<!--
 			<state id="Comment" color="#236E25">
 				<begin><regex>/\*</regex></begin>
 				<end><regex>\*/</regex></end>
@@ -319,8 +314,7 @@
 				<begin><regex>`</regex></begin>
 				<end><regex>`</regex></end>
 			</state>
--->
-			
+						
 		</default>
 		
 	</states>

@@ -15,6 +15,28 @@ elsewhere first)*:
 
     ln -s ~/Projects/Coda-SyntaxModes/Plug-ins ~/Library/Application\ Support/Coda/Plug-ins
 
+## Rationale
+
+Coda is my goto editor for all coding projects. When learning a new language, the code hints that
+Syntax Highlighting and Auto-complete give are very nice. Unfortunately, Coda is somewhat lacking
+in the "serious" programming language modes. But thanks to the plug-in architecture, it's not a huge
+deal to write new modes, and it actually helps a lot in learning a new language to write a mode for
+it.
+
+So, here's the languages that are missing that I'd like to work on, based on <http://langpop.com>
+with my own preferences mixed in:
+
+- C
+- C++
+- Go
+- Assembly
+- Shell (bash)
+- Lisp
+- Haskell
+- Smalltalk
+- HTML Templates (erb, smarty, ...)
+- ...
+
 ## Info For Mode Writers
 
 If a mode doesn't work with Coda, there are generally two culprits:
@@ -29,11 +51,11 @@ in all places, see: https://groups.google.com/forum/#!topic/coda-users/g9W8IlHFB
 
 Some basic guidelines that I'm trying to follow with these modes:
 
-Testing against valid code examples. All the modes contain an example file test.(type) file that
-illustrates how each particular coloring looks in practice. I welcome changes to these files to
-show test cases that fail.
+- Testing against valid code examples: All the modes contain an example file test.(type) file that
+illustrates how each particular coloring looks in practice, trying to find the edge cases that might
+break things.
 
-Following Coda coloring conventions. Unfortunately, this seems to vary quite a bit among modes, but
+- Following Coda coloring conventions: Unfortunately, this seems to vary quite a bit among modes, but
 here's what I've been referencing:
 
 		- KIND                   COLOR    SYMBOL        ID

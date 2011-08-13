@@ -13,6 +13,8 @@ elsewhere first)*:
 
     ln -s ~/Projects/Coda-SyntaxModes/Modes ~/Library/Application\ Support/Coda/Modes
 
+    ln -s ~/Projects/Coda-SyntaxModes/Plug-ins ~/Library/Application\ Support/Coda/Plug-ins
+
 ## Info For Mode Writers
 
 If a mode doesn't work with Coda, there are generally two culprits:

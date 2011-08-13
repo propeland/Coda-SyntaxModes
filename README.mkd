@@ -2,15 +2,16 @@ This is a collection of modes for Coda. Most are cloned exactly from the SubEtha
 mode collection at codingmonkeys.de. I have made the occasional tweak where I've found
 inconsistencies or incompatibility with Coda.
 
-[www.codingmonkeys.de Modes](http://www.codingmonkeys.de/subethaedit/modes.html)
+[www.codingmonkeys.de/subethaedit/modes.html](http://www.codingmonkeys.de/subethaedit/modes.html)
 
 To install, put the contents of the "Modes" folder into
 ~/Library/Application Support/Coda/Modes
 
 I use a symbolic link for this purpose, so that I can maintain the modes in a
-seperate location, for example:
+seperate location, for example *(warning: if you have existing modes in this folder, back them up
+elsewhere first)*:
 
-    ln -s ~/Projects/Coda-SyntaxModes ~/Library/Application\ Support/Coda/Modes
+    ln -s ~/Projects/Coda-SyntaxModes/Modes ~/Library/Application\ Support/Coda/Modes
 
 ## Info For Mode Writers
 

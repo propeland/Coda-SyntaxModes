@@ -18,7 +18,7 @@
 		This tag is optional.
 		-->	   
 
-		<name>Erlang Syntax</name>
+		<name>Erlang</name>
 
 		<!-- 
 		The <charsintokens> and the <charsdelimitingtokens> instruct the syntax highlighter

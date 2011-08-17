@@ -5,8 +5,17 @@
         <endregex>}</endregex>
     </blocks>
     
+    <symbol id="Label" image="Symbol#" indentation="1" ignoreblocks="yes">
+    	<regex>(?&lt;=[\n\r]|^)([\w\d]*:)</regex>
+				<postprocess>
+	        <find>:</find>
+	        <replace></replace>
+        </postprocess>
+
+    </symbol>
+
     <symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes">
-        <regex>(?&lt;=[\n\r]|^)(?:[\w0-9_*]+\s+){1,3}[\w0-9_*]+[ \t]*\([\]\[\w0-9_,\s*&amp;/]*\)(?=\s*\{)</regex>
+        <regex>(?&lt;=[\n\r]|^)[\w]+[\s\n\r]+[\w\s\n\r]*[\w]+\([\w\s&amp;\*_,]*\)[\s]*\{</regex>
         <postprocess>
             <find>\([^\)]*\)</find>
             <replace>()</replace>
@@ -14,14 +23,18 @@
             <replace> </replace>
             <find>[ \t]+</find>
             <replace> </replace>
+            <find>{</find>
+            <replace></replace>
         </postprocess>
     </symbol>
-
-    <symbol id="Pragma Marks" font-weight="bold" image="Symbol#" indentation="0" ignoreblocks="yes" show-in-comments="yes">
-        <regex>(#pragma mark[	 -]*[^\n]*)\n</regex>
+    
+    <symbol id="Pragma Marks" font-weight="bold" image="SymbolMark" indentation="1" ignoreblocks="yes">
+        <regex>[^\n\r]*(#pragma[^\n]*)</regex>
         <postprocess>
-            <find>#pragma mark[-	 \n]*</find> <!-- An empty string places a separator -->
+            <find>#pragma mark </find>
             <replace></replace>
+            <find>-$</find>
+            <replace>~~~~~~~~~~~~~~~~~</replace>
         </postprocess>
     </symbol>
 	
@@ -30,7 +43,7 @@
         <postprocess>
             <find>{.*</find>
             <replace></replace>
-			<find>struct </find>
+			<find>^struct </find>
 			<replace></replace>
             <find>[ \t]+</find>
             <replace> </replace>
@@ -49,11 +62,6 @@
         </postprocess>
     </symbol>
 
-
-    <symbol id="Defines" image="Symbol#" indentation="0" ignoreblocks="yes">
-        <regex>#define[ \t]*([\w\d()]*)[ \t]+[^\n\r]*[\n\r]</regex>
-    </symbol>
-
     <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no">
         <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
         <postprocess>
@@ -61,5 +69,4 @@
             <replace>Versioning conflict!</replace>
         </postprocess>
     </symbol>
-
 </symbols>

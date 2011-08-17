@@ -27,9 +27,9 @@
     -->    
 
     <symbol id="functionDef" image="SymbolF()">
-    	<regex>([^\n\r]*([\w_]*\([\w\s,_]*\)\s*->))</regex>
+    	<regex>^[\n\r]*(^[\w_]*\([\w\s_\{\},\[\]|]*\)[\s]*->)</regex>
         <postprocess>
-            <find>\([^\)]*\)</find>
+            <find>-></find>
             <replace></replace>
         </postprocess>
 

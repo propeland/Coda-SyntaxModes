@@ -10,8 +10,7 @@
 #include "gg.h"
 #include "opt.h"
 
-
-#pragma mark hello
+#pragma mark start
 
 void
 defframe(Prog *ptxt)
@@ -60,6 +59,7 @@ void ginscall(Node *f, int proc) {
 	}
 }
 
+// Example of a section break
 #pragma mark -
 
 /*
@@ -214,11 +214,44 @@ cgen_callret(Node *n, Node *res)
 	cgen_as(res, &nod);
 }
 
-/*
- * call to n has already been generated.
- * generate:
- *	res = &return value from call.
- */
+
+#pragma mark Keywords
+
+auto
+double
+int
+long
+break
+else
+long
+switch
+case
+enum
+register
+typedef
+char
+extern
+return
+union
+const
+float
+short
+unsigned
+continue
+for
+signed
+void
+default
+goto
+sizeof
+volatile
+do
+if
+static
+while
+
+
+
 void
 cgen_aret(Node *n, Node *res)
 {

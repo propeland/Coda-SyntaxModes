@@ -34,7 +34,7 @@
             <find>#pragma mark </find>
             <replace></replace>
             <find>-$</find>
-            <replace>~~~~~~~~~~~~~~~~~</replace>
+            <replace>- - - - - - - -</replace>
         </postprocess>
     </symbol>
 	
